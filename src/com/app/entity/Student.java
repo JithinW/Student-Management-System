@@ -1,4 +1,4 @@
-package com.app;
+package com.app.entity;
 
 public class Student {
 	
@@ -7,14 +7,14 @@ public class Student {
 	private String gender;
 	private String dob;
 	private String course;
-	private String address;
+	private String place;
 	private String phone;
 	private String email;
 	
 	public Student() {
 		
 	}
-	public Student(String rollno, String studName, String gender, String dob, String course, String address,
+	public Student(String rollno, String studName, String gender, String dob, String course, String place,
 			String phone, String email) {
 		super();
 		this.rollno = rollno;
@@ -22,7 +22,7 @@ public class Student {
 		this.gender = gender;
 		this.dob = dob;
 		this.course = course;
-		this.address = address;
+		this.place = place;
 		this.phone = phone;
 		this.email = email;
 	}
@@ -57,11 +57,11 @@ public class Student {
 	public void setCourse(String course) {
 		this.course = course;
 	}
-	public String getAddress() {
-		return address;
+	public String getPlace() {
+		return place;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setPlace(String address) {
+		this.place = address;
 	}
 	public String getPhone() {
 		return phone;
@@ -80,6 +80,6 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Rollno : " + rollno + "\nStudent Name :" + studName + "\nGender :" + gender + "\nDob :" + dob
-				+ "\nCourse :" + course + "\nAddress :" + address + "\nPhone :" + phone + "\nEmail :" + email+"\n";
+				+ "\nCourse :" + course + "\nPlace :" + place + "\nPhone :" + phone + "\nEmail :" + email+"\n";
 	}
 }
