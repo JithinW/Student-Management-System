@@ -110,7 +110,7 @@ public class ValidationService {
 			dao.addStudent();
 		}
 		else if(phone.length()<10) {
-			System.out.println("phone number must be atleast 10 digits, please enter your valid phone number");
+			System.out.println("phone number must be atleast 10 digits, please enter valid phone number");
 			dao.addStudent();
 		}
 		else {
